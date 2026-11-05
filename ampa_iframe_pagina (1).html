@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AMPA Arboleas</title><style>html,body{margin:0;padding:0;background:#fff}body{padding:0 12px}</style></head><body>
+<!-- ===== AMPA ARBOLEAS · Módulo "Código" de Divi · autocontenido y con estilos aislados (#ampa-root) ===== -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+#ampa-root{--navy:#1d1a3c;--navy2:#2b2757;--blue:#93c0e3;--blue-d:#6aa3d0;--blue-l:#e8f2fa;--white:#fff;--ink:#2a2748;
+font-family:'Open Sans',Arial,sans-serif;color:var(--ink);line-height:1.6;max-width:1200px;margin:0 auto;box-sizing:border-box;scroll-behavior:smooth}
+#ampa-root *,#ampa-root *::before,#ampa-root *::after{box-sizing:border-box}
+#ampa-root h1,#ampa-root h2,#ampa-root h3,#ampa-root p,#ampa-root ul{margin:0;padding:0;font-family:inherit}
+#ampa-root ul{list-style:none}
+#ampa-root a{text-decoration:none;color:inherit}
+#ampa-root svg{display:block}
+/* Navegación interna */
+#ampa-root .ampa-nav{position:sticky;top:0;z-index:50;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);padding:10px;border-radius:0 0 18px 18px;box-shadow:0 6px 20px rgba(29,26,60,.08)}
+#ampa-root .ampa-nav a{padding:8px 16px;border-radius:999px;font-weight:700;font-size:14px;color:var(--navy);transition:.25s}
+#ampa-root .ampa-nav a:hover,#ampa-root .ampa-nav a.on{background:var(--blue);color:var(--white)}
+/* Hero */
+#ampa-root .ampa-hero{position:relative;overflow:hidden;margin-top:18px;border-radius:24px;background:linear-gradient(120deg,var(--navy),var(--navy2),#2d3f7a,var(--navy));background-size:300% 300%;animation:ampaBg 14s ease infinite;color:var(--white);padding:64px 40px;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+@keyframes ampaBg{50%{background-position:100% 50%}}
+#ampa-root .ampa-hero::after{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;border-radius:50%;background:var(--blue);opacity:.18}
+#ampa-root .ampa-hero h1{font-size:clamp(34px,6vw,64px);font-weight:800;line-height:1.05;color:var(--white)}
+#ampa-root .ampa-hero p.lead{margin-top:16px;font-size:18px;max-width:520px;color:#dbe9f5}
+#ampa-root .ampa-slogan{display:inline-block;margin-top:20px;padding:8px 18px;border:2px solid var(--blue);border-radius:999px;color:var(--blue);font-weight:700}
+#ampa-root .ampa-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+#ampa-root .ampa-btn{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:700 15px 'Open Sans',Arial,sans-serif;padding:13px 24px;border-radius:14px;background:var(--blue);color:var(--navy);transition:.25s}
+#ampa-root .ampa-btn:hover{transform:translateY(-3px);background:var(--white)}
+#ampa-root .ampa-btn.ghost{background:transparent;color:var(--white);border:2px solid var(--blue)}
+#ampa-root .ampa-btn.ghost:hover{background:var(--blue);color:var(--navy)}
+#ampa-root .ampa-tower{justify-self:center;width:min(220px,60%);filter:drop-shadow(0 12px 30px rgba(0,0,0,.35));animation:ampaFloat 5s ease-in-out infinite}
+@keyframes ampaFloat{50%{transform:translateY(-10px)}}
+/* Secciones */
+#ampa-root section{padding:56px 10px 8px}
+#ampa-root .ampa-h2{font-size:clamp(26px,4vw,38px);font-weight:800;color:var(--navy);margin-bottom:8px}
+#ampa-root .ampa-h2::after{content:"";display:block;width:64px;height:5px;border-radius:5px;background:var(--blue);margin-top:10px}
+#ampa-root .ampa-sub{color:#55527a;margin-bottom:26px;max-width:720px}
+#ampa-root .ampa-two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#ampa-root .ampa-box{background:var(--blue-l);border-radius:22px;padding:30px}
+#ampa-root .ampa-box.dark{background:var(--navy);color:var(--white)}
+#ampa-root .ampa-box.dark h3{color:var(--blue)}
+#ampa-root .ampa-box h3{font-size:22px;font-weight:800;color:var(--navy);margin-bottom:10px}
+#ampa-root .ampa-quote{font-size:21px;font-weight:700;color:var(--navy);border-left:6px solid var(--blue);padding-left:16px;margin-bottom:16px}
+/* Tarjetas */
+#ampa-root .ampa-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+#ampa-root .ampa-card{background:var(--white);border:2px solid var(--blue-l);border-radius:20px;padding:24px;transition:.3s;cursor:default}
+#ampa-root .ampa-card:hover{border-color:var(--blue);transform:translateY(-6px);box-shadow:0 16px 30px rgba(147,192,227,.4)}
+#ampa-root .ampa-ico{width:52px;height:52px;border-radius:16px;background:var(--blue);display:grid;place-items:center;margin-bottom:14px}
+#ampa-root .ampa-ico svg{width:28px;height:28px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#ampa-root .ampa-card p{font-size:15px}
+/* Ventajas */
+#ampa-root .ampa-checks{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#ampa-root .ampa-checks li{display:flex;gap:12px;align-items:flex-start;background:var(--white);border-radius:14px;padding:14px 16px;border:2px solid var(--blue-l);font-weight:600;transition:.25s}
+#ampa-root .ampa-checks li:hover{background:var(--blue-l)}
+#ampa-root .ampa-checks li::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:14px}
+/* Estadísticas */
+#ampa-root .ampa-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-top:22px}
+#ampa-root .ampa-stat{background:var(--navy);color:var(--white);border-radius:18px;padding:22px;text-align:center}
+#ampa-root .ampa-stat b{display:block;font-size:42px;font-weight:800;color:var(--blue);line-height:1}
+#ampa-root .ampa-stat span{font-size:14px;color:#dbe9f5}
+/* Socio */
+#ampa-root .ampa-count{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 18px}
+#ampa-root .ampa-count div{background:rgba(255,255,255,.1);border:1px solid var(--blue);border-radius:14px;padding:10px 14px;min-width:70px;text-align:center}
+#ampa-root .ampa-count b{display:block;font-size:28px;color:var(--blue);line-height:1.1}
+#ampa-root .ampa-count span{font-size:12px}
+#ampa-root .ampa-iban{display:flex;gap:10px;flex-wrap:wrap;align-items:center;background:var(--white);color:var(--navy);padding:12px 14px;border-radius:14px;margin-top:10px}
+#ampa-root .ampa-iban code{font:700 16px/1.3 'Courier New',monospace;letter-spacing:1px;word-break:break-all}
+#ampa-root .ampa-iban .ampa-btn{padding:8px 16px;background:var(--navy);color:var(--white)}
+#ampa-root .ampa-iban .ampa-btn:hover{background:var(--blue-d)}
+#ampa-root .ampa-seg{display:flex;gap:8px;margin:12px 0}
+#ampa-root .ampa-seg button{flex:1;padding:12px;border:2px solid var(--blue);background:transparent;border-radius:12px;font:700 15px 'Open Sans',Arial,sans-serif;color:var(--navy);cursor:pointer;transition:.2s}
+#ampa-root .ampa-seg button.on{background:var(--navy);color:var(--white);border-color:var(--navy)}
+#ampa-root .ampa-box>p{margin-bottom:6px}
+#ampa-root .ampa-price{font-size:56px;font-weight:800;color:var(--navy);line-height:1}
+#ampa-root .ampa-concept{display:block;margin-top:16px;background:var(--white);border-radius:12px;padding:12px 14px;font-weight:600}
+#ampa-root .ampa-concept input{width:100%;margin-top:6px;padding:10px;border:2px solid var(--blue);border-radius:10px;font:600 15px 'Open Sans',Arial,sans-serif;color:var(--navy)}
+/* Pasos */
+#ampa-root .ampa-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:s;margin-top:24px}
+#ampa-root .ampa-steps li{counter-increment:s;position:relative;background:var(--blue-l);border-radius:18px;padding:22px 20px 20px 20px}
+#ampa-root .ampa-steps li::before{content:counter(s);position:absolute;top:-14px;left:18px;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--blue);display:grid;place-items:center;font-weight:800}
+/* FAQ */
+#ampa-root .ampa-faq details{background:var(--white);border:2px solid var(--blue-l);border-radius:16px;margin-bottom:10px;overflow:hidden}
+#ampa-root .ampa-faq summary{cursor:pointer;padding:16px 20px;font-weight:700;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:10px}
+#ampa-root .ampa-faq summary::-webkit-details-marker{display:none}
+#ampa-root .ampa-faq summary::after{content:"+";font-size:24px;line-height:1;color:var(--blue-d);transition:.3s}
+#ampa-root .ampa-faq details[open] summary::after{transform:rotate(45deg)}
+#ampa-root .ampa-faq details[open]{border-color:var(--blue)}
+#ampa-root .ampa-faq details p{padding:0 20px 18px}
+/* CTA y redes */
+#ampa-root .ampa-cta{margin:50px 0 20px;border-radius:24px;background:var(--blue);padding:44px 30px;text-align:center}
+#ampa-root .ampa-cta h2{font-size:clamp(26px,4vw,40px);font-weight:800;color:var(--navy)}
+#ampa-root .ampa-cta p{margin:8px 0 22px;font-weight:600;color:var(--navy)}
+#ampa-root .ampa-cta .ampa-btn{background:var(--navy);color:var(--white)}
+#ampa-root .ampa-cta .ampa-btn:hover{background:var(--white);color:var(--navy)}
+#ampa-root .ampa-toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,120px);background:var(--navy);color:var(--white);padding:12px 22px;border-radius:12px;font-weight:700;transition:.35s;z-index:99999}
+#ampa-root .ampa-toast.show{transform:translate(-50%,0)}
+/* Revelado al hacer scroll */
+#ampa-root.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+#ampa-root.js .rv.in{opacity:1;transform:none}
+#ampa-root a:focus-visible,#ampa-root button:focus-visible,#ampa-root summary:focus-visible,#ampa-root input:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+@media(max-width:820px){#ampa-root .ampa-hero{grid-template-columns:1fr;padding:44px 24px}#ampa-root .ampa-tower{display:none}#ampa-root .ampa-two,#ampa-root .ampa-checks{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){#ampa-root *{animation:none!important;transition:none!important}#ampa-root.js .rv{opacity:1;transform:none}}
+@media print{#ampa-root .ampa-nav,#ampa-root .ampa-btns{display:none}}
+</style>
+
+<div id="ampa-root">
+<nav class="ampa-nav" aria-label="Secciones del AMPA">
+  <a href="#ampa-que">¿Qué es?</a><a href="#ampa-hace">¿Qué hace?</a><a href="#ampa-ventajas">Ventajas</a><a href="#ampa-socio">Hazte socio</a><a href="#ampa-faq">Preguntas</a><a href="#ampa-contacto">Contacto</a>
+</nav>
+
+<header class="ampa-hero">
+  <div>
+    <h1>Hazte del AMPA</h1>
+    <p class="lead">Somos el vínculo de unión entre el colegio y las familias del CEIP Nuestra Señora de la Asunción de Arboleas.</p>
+    <span class="ampa-slogan">Juntos hacemos un colegio mejor</span>
+    <div class="ampa-btns">
+      <a class="ampa-btn" href="#ampa-socio">Quiero ser socio</a>
+      <a class="ampa-btn ghost" href="https://www.instagram.com/arboleasampa" target="_blank" rel="noopener">Instagram</a>
+      <a class="ampa-btn ghost" href="https://www.facebook.com/search/top?q=AMPA%20Arboleas" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+  <svg class="ampa-tower" viewBox="0 0 120 200" role="img" aria-label="Torre de Arboleas"><path d="M30 200V70h60v130z" fill="#93c0e3"/><path d="M22 70h76l-8-20H30z" fill="#fff"/><path d="M34 50 60 8l26 42z" fill="#6aa3d0"/><rect x="52" y="90" width="16" height="30" rx="8" fill="#1d1a3c"/><rect x="52" y="140" width="16" height="30" rx="8" fill="#1d1a3c"/><path d="M60 0v12" stroke="#fff" stroke-width="4"/></svg>
+</header>
+
+<section id="ampa-que" class="rv">
+  <h2 class="ampa-h2">¿Qué es el AMPA?</h2>
+  <div class="ampa-two">
+    <div class="ampa-box">
+      <p class="ampa-quote">Es el vínculo de unión entre el colegio y las familias.</p>
+      <p>El AMPA es el conjunto de padres y madres que se involucran en la educación de nuestros hijos, participando en la mejora del proyecto educativo del colegio, colaborando en el desarrollo de actividades y proponiendo e impulsando proyectos que complementen la calidad de la enseñanza.</p>
+    </div>
+    <div class="ampa-box dark">
+      <h3>Participa: tu opinión importa</h3>
+      <p>Cuantas más familias formamos parte, más fuerza tiene nuestra voz en el consejo escolar y más actividades podemos organizar para nuestros hijos. ¡Juntos sumamos!</p>
+      <div class="ampa-stats" aria-label="Datos del AMPA">
+        <div class="ampa-stat"><b data-n="5">0</b><span>líneas de acción</span></div>
+        <div class="ampa-stat"><b data-n="7">0</b><span>ventajas de ser socio</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ampa-hace" class="rv">
+  <h2 class="ampa-h2">¿Qué hace el AMPA?</h2>
+  <p class="ampa-sub">Cinco formas concretas en las que trabajamos por el colegio y las familias.</p>
+  <div class="ampa-cards">
+    <article class="ampa-card"><div class="ampa-ico"><svg viewBox="0 0 24 24"><path d="M11 17 8 14M14 14l-3 3M3 11l4-4 4 2 4-2 6 6-4 4M3 11l5 5"/></svg></div><h3>Representar</h3><p>Representar los intereses de las familias. El AMPA está presente en el consejo escolar.</p></article>
+    <article class="ampa-card"><div class="ampa-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6M16 14c3 0 5 2 5 5"/></svg></div><h3>Informar</h3><p>Informar de cuantas noticias, actividades e iniciativas de interés tengan lugar en el centro y tratar de involucrar a padres y madres en la formación de los alumnos.</p></article>
+    <article class="ampa-card"><div class="ampa-ico"><svg viewBox="0 0 24 24"><path d="M3 10 12 4l9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 20h18"/></svg></div><h3>Trasladar</h3><p>Trasladar cualquier inquietud o necesidad que haya con algún asunto al consejo escolar.</p></article>
+    <article class="ampa-card"><div class="ampa-ico"><svg viewBox="0 0 24 24"><path d="M14 6a4 4 0 0 0 5 5l-9 9a2.1 2.1 0 0 1-3-3l9-9a4 4 0 0 0-2-2zM4 4l4 4"/></svg></div><h3>Mejorar</h3><p>Colaborar en mejorar las instalaciones del colegio, como es la climatización de las aulas o las mejoras del patio.</p></article>
+    <article class="ampa-card"><div class="ampa-ico"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M9 7h6"/></svg></div><h3>Equipar</h3><p>Comprar libros para biblioteca, juegos para los niños, etc.</p></article>
+  </div>
+</section>
+
+<section id="ampa-ventajas" class="rv">
+  <h2 class="ampa-h2">Ser del AMPA tiene muchas ventajas</h2>
+  <p class="ampa-sub">¡Juntos sumamos! Esto es lo que recibes al hacerte socio.</p>
+  <ul class="ampa-checks">
+    <li>Asesoramiento ante cualquier problema escolar</li>
+    <li>Oportunidad de trasladar presencialmente tus inquietudes al consejo escolar</li>
+    <li>Información sobre las actividades del colegio y participación en ellas</li>
+    <li>Entrega de agenda escolar al inicio del curso</li>
+    <li>Descuentos en comercios amigos</li>
+    <li>Descuentos en excursiones del colegio</li>
+    <li>Disfrute de actividades de convivencia organizadas por el AMPA</li>
+  </ul>
+</section>
+
+<section id="ampa-socio" class="rv">
+  <h2 class="ampa-h2">Hazte socio</h2>
+  <p class="ampa-sub">Cuota anual y plazo de inscripción para el curso 2026/27.</p>
+  <div class="ampa-two">
+    <div class="ampa-box dark">
+      <h3>Plazo: hasta el 31 de diciembre de 2026</h3>
+      <div class="ampa-count" id="ampa-count" aria-live="polite"><div><b>0</b><span>días</span></div><div><b>0</b><span>horas</span></div><div><b>0</b><span>min</span></div><div><b>0</b><span>seg</span></div></div>
+      <h3>Transferencia Unicaja</h3>
+      <div class="ampa-iban"><code id="ampa-iban">ES39 2103 5140 0200 3000 0383</code><button class="ampa-btn" type="button" id="ampa-copy">Copiar IBAN</button></div>
+    </div>
+    <div class="ampa-box">
+      <h3>Calcula tu cuota anual</h3>
+      <div class="ampa-seg" role="group" aria-label="Número de hijos"><button type="button" class="on" data-p="10">1 hijo</button><button type="button" data-p="15">2 o más hijos</button></div>
+      <p class="ampa-price"><span id="ampa-price">10</span> €</p>
+      <p>10 euros si tienes un hijo, 15 euros si tienes dos o más.</p>
+      <label class="ampa-concept">Concepto de la transferencia: nombre del niño + curso
+        <input id="ampa-name" type="text" placeholder="Ej.: Lucía Pérez 3º Primaria" autocomplete="off">
+      </label>
+      <div class="ampa-btns"><button type="button" class="ampa-btn" id="ampa-copyc" style="background:var(--navy);color:#fff">Copiar concepto</button></div>
+    </div>
+  </div>
+  <ol class="ampa-steps" style="padding:0;list-style:none;margin-top:30px">
+    <li><b>Elige tu cuota</b><br>10 € con un hijo o 15 € con dos o más.</li>
+    <li><b>Haz la transferencia</b><br>A la cuenta de Unicaja indicada arriba.</li>
+    <li><b>Escribe el concepto</b><br>Nombre del niño + curso.</li>
+    <li><b>Antes del 31/12/2026</b><br>¡Y ya formas parte de la comunidad!</li>
+  </ol>
+</section>
+
+<section id="ampa-faq" class="rv ampa-faq">
+  <h2 class="ampa-h2">Preguntas frecuentes</h2>
+  <details><summary>¿Cuánto cuesta ser socio?</summary><p>La cuota anual es de 10 euros si tienes un hijo y de 15 euros si tienes dos o más.</p></details>
+  <details><summary>¿Hasta cuándo puedo apuntarme?</summary><p>Hasta el 31 de diciembre de 2026.</p></details>
+  <details><summary>¿Cómo pago la cuota?</summary><p>Por transferencia a la cuenta de Unicaja ES39 2103 5140 0200 3000 0383, indicando como concepto el nombre del niño y su curso.</p></details>
+  <details><summary>¿Qué papel tiene el AMPA en el consejo escolar?</summary><p>El AMPA está presente en el consejo escolar para representar los intereses de las familias y trasladar sus inquietudes.</p></details>
+  <details><summary>¿Cómo me mantengo informado?</summary><p>A través de nuestro Instagram @arboleasampa y nuestra página de Facebook AMPA Arboleas.</p></details>
+</section>
+
+<section id="ampa-contacto">
+  <div class="ampa-cta rv">
+    <h2>Únete hoy</h2>
+    <p>Súmate a la comunidad del AMPA Arboleas.</p>
+    <div class="ampa-btns" style="justify-content:center">
+      <a class="ampa-btn" href="https://www.instagram.com/arboleasampa" target="_blank" rel="noopener">Instagram: arboleasampa</a>
+      <a class="ampa-btn" href="https://www.facebook.com/search/top?q=AMPA%20Arboleas" target="_blank" rel="noopener">Facebook: AMPA Arboleas</a>
+    </div>
+  </div>
+</section>
+<div class="ampa-toast" id="ampa-toast" role="status"></div>
+</div>
+
+<script>
+(function(){
+var R=document.getElementById('ampa-root');if(!R)return;R.classList.add('js');
+var $=function(s,c){return(c||R).querySelector(s)},$$=function(s,c){return[].slice.call((c||R).querySelectorAll(s))};
+/* Revelado + contadores */
+function countUp(el){var t=+el.dataset.n,i=0;(function s(){el.textContent=Math.min(++i,t);if(i<t)setTimeout(s,120)})()}
+if('IntersectionObserver'in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');$$('[data-n]',x.target).forEach(countUp);io.unobserve(x.target)}})},{threshold:.12});$$('.rv').forEach(function(n){io.observe(n)})}
+else{$$('.rv').forEach(function(n){n.classList.add('in')});$$('[data-n]').forEach(function(n){n.textContent=n.dataset.n})}
+/* Navegación con scroll suave y sección activa */
+var links=$$('.ampa-nav a');
+links.forEach(function(a){a.addEventListener('click',function(e){var t=document.getElementById(a.getAttribute('href').slice(1));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+if('IntersectionObserver'in window){var so=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id)})})},{rootMargin:'-40% 0px -55% 0px'});links.forEach(function(a){var t=document.getElementById(a.getAttribute('href').slice(1));if(t)so.observe(t)})}
+/* Cuenta atrás */
+var end=new Date(2026,11,31,23,59,59),cd=$$('#ampa-count b');
+function tick(){var d=end-new Date();if(d<0){$('#ampa-count').innerHTML='<div style="min-width:0;padding:10px 18px"><b style="font-size:18px">Plazo finalizado</b></div>';return}
+var v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60];cd.forEach(function(b,i){b.textContent=v[i]})}
+tick();setInterval(tick,1000);
+/* Calculadora de cuota */
+$$('.ampa-seg button').forEach(function(b){b.addEventListener('click',function(){$$('.ampa-seg button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');$('#ampa-price').textContent=b.dataset.p})});
+/* Copiar al portapapeles */
+var tm;function toast(m){var t=$('#ampa-toast');t.textContent=m;t.classList.add('show');clearTimeout(tm);tm=setTimeout(function(){t.classList.remove('show')},2200)}
+function copy(txt,msg){function fb(){var a=document.createElement('textarea');a.value=txt;a.style.position='fixed';a.style.opacity=0;document.body.appendChild(a);a.select();try{document.execCommand('copy');toast(msg)}catch(e){toast('Copia manualmente: '+txt)}document.body.removeChild(a)}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(function(){toast(msg)},fb)}else fb()}
+$('#ampa-copy').addEventListener('click',function(){copy($('#ampa-iban').textContent.replace(/\s/g,''),'IBAN copiado')});
+$('#ampa-copyc').addEventListener('click',function(){var v=$('#ampa-name').value.trim();if(!v){toast('Escribe primero el nombre y el curso');$('#ampa-name').focus();return}copy(v,'Concepto copiado')});
+/* FAQ: un solo desplegable abierto */
+$$('.ampa-faq details').forEach(function(d){d.addEventListener('toggle',function(){if(d.open)$$('.ampa-faq details').forEach(function(o){if(o!==d)o.open=false})})});
+/* Auto-altura cuando se usa dentro de un iframe */
+function h(){if(window.parent!==window)parent.postMessage({ampaH:document.body.offsetHeight+20},'*')}
+window.addEventListener('load',h);window.addEventListener('resize',h);setInterval(h,800);
+})();
+</script>
+
+</body></html>
